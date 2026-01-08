@@ -198,7 +198,38 @@ export default {
         parsePages: false,
     },
     build: {
-        postcss: null,
+        postcss: {
+            plugins: {
+                '@fullhuman/postcss-purgecss': {
+                    content: [
+                        './components/**/*.vue',
+                        './layouts/**/*.vue',
+                        './pages/**/*.vue',
+                        './plugins/**/*.js',
+                        './themes/**/*.vue',
+                    ],
+                    safelist: [
+                        /-(leave|enter|appear)(|-(to|from))$/,
+                        /^(?!(|.*?:)cursor-move).+-move$/,
+                        /^router-link(|-exact)-active$/,
+                        /data-v-.*/,
+                        'html',
+                        'body',
+                        '__nuxt',
+                        '__layout',
+                        'v-application',
+                        'v-application--wrap',
+                        /v-/,
+                        /--/,
+                        /__/,
+                        /swiper/,
+                        /swal2-/,
+                        /col-/,
+                        /row/,
+                    ],
+                },
+            },
+        },
         transpile: ['vee-validate/dist/rules', 'friendly-challenge'],
         extend(config) {
             Object.assign(config.resolve.alias, require('./aliases.config'));

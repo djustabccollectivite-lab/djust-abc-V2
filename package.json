@@ -103,6 +103,7 @@
         "xlsx-js-style": "^1.2.0"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^7.0.2",
         "@nuxt/devtools": "^1.0.8",
         "@nuxt/test-utils": "^0.2.2",
         "@nuxt/types": "^2.15.7",
