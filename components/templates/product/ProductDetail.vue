@@ -89,6 +89,9 @@ export default {
         },
     },
     async created() {
+        if (this.product) {
+            this..trackProductView(this.product);
+        }
         this.$nuxt.$on('findOfferIdToDisplay', async (val) => {
             await this.$core.useOffer.findOfferIdToDisplay(val);
             this.increment++;

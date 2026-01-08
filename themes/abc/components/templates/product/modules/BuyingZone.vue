@@ -94,6 +94,7 @@
                     variant="contained"
                     :fullWidth="true"
                     :isDisabled="actionDisabled"
+                    @addToCart="onAddToCart"
                 />
             </div>
             <DjButtonAddToQuote
@@ -219,6 +220,24 @@ export default {
         this.updateValues();
     },
     methods: {
+        onAddToCart() {
+            this.$gtm.push({
+                event: 'addToCart',
+                ecommerce: {
+                    currencyCode: this.currency,
+                    add: {
+                        products: [{
+                            name: this.product.name,
+                            id: this.product.sku,
+                            price: this.priceDisplayed,
+                            brand: this.product.brand.name,
+                            category: this.product.categories[0] ? this.product.categories[0].name : '',
+                            quantity: this.quantity
+                        }]
+                    }
+                }
+            });
+        },
         getBestOfferFromList(offers) {
             if (offers && offers.length > 0) {
                 let filterOffers =

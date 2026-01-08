@@ -143,12 +143,13 @@ export default defineComponent({
         const products_ = ref(props.products);
         const ctx = useContext();
         const router = useRouter();
+        const {  } = useContext();
         async function handleAddToCart() {
             if (props.isDisabled) return;
             if (ctx.$auth.loggedIn) {
                 // MultiProducts
                 if (props.products.length > 0) {
-                    let item = await multiProducts(props.products);
+                    undefined
                     if (item.length > 0) {
                         await readyToUpdateCart(item);
                     } else {
@@ -157,7 +158,7 @@ export default defineComponent({
                 }
                 // OnceProduct
                 else {
-                    let item = await oneProduct();
+                    undefined
                     if (item) {
                         await readyToUpdateCart(item);
                     } else {

@@ -430,6 +430,16 @@ export default {
             return this.reviewMessage ? false : true;
         },
     },
+    watch: {
+        order: {
+            handler(newOrder) {
+                if (newOrder && newOrder.id) {
+                    this.$analytics.trackPurchase(newOrder);
+                }
+            },
+            immediate: true
+        }
+    },
     async created() {
         this.documents = this.order ? await this.$core.useOrder.getAllOrderDocuments(this.order.id) : null;
         this.reasonList = await this.$core.useOrder.APIgetAllReasonTypes();

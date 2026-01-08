@@ -175,6 +175,32 @@ export default {
     async created() {
         if (this.orderCommercialId) {
             this.order = await this.$purjus.useOrders.getCommercialOrderById(this.orderCommercialId);
+            if (this.order) {
+                this.$gtm.push({
+                    event: 'purchase',
+                    ecommerce: {
+                        purchase: {
+                            actionField: {
+                                id: this.order.reference,
+                                affiliation: 'Online Store',
+                                revenue: this.order.total / 100,
+                                tax: this.order.totalTax / 100,
+                                shipping: this.order.shipping / 100,
+                            },
+                            products: this.order.orderLogistics.flatMap(logistics => 
+                                logistics.lines.map(item => ({
+                                    name: item.product.name,
+                                    id: item.product.sku,
+                                    price: item.unitPrice / 100,
+                                    brand: item.product.brand.name,
+                                    category: item.product.categories[0] ? item.product.categories[0].name : '',
+                                    quantity: item.quantity,
+                                }))
+                            ),
+                        },
+                    },
+                });
+            }
         }
     },
     methods: {

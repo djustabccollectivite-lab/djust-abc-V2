@@ -194,6 +194,20 @@ export default {
             this.productDescription = offerSelected?.offerInventory?.variant?.description?.replace(/\n/g, '<br>');
             this.productPictures = offerSelected?.offerInventory?.variant?.productPictures;
             this.increment++; // Permet de mettre à jour les images du swiper au changement d'une option
+
+            this.$gtm.push({
+                event: 'view_item',
+                ecommerce: {
+                    items: [{
+                        item_name: this.product.name,
+                        item_id: this.product.sku,
+                        price: offerSelected.offerPrices[0].priceRanges[0].price.itemPrice / 100,
+                        item_brand: this.product.brand.name,
+                        item_category: this.product.categories[0] ? this.product.categories[0].name : '',
+                        item_variant: offerSelected.offerInventory.variant.name
+                    }]
+                }
+            });
         },
         relatedProductRedirect() {
             this.$router.push('/cms/contact-us?redirectedFrom=associatedProduct');
