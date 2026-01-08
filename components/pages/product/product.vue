@@ -12,15 +12,13 @@
 
 <script>
 import BreadCrumb from '@components/atoms/DjBreadCrumb/DjBreadCrumb.vue';
-import RelatedProducts from '@components/organisms/DjFeaturedProducts/DjFeaturedProducts.vue';
-import ProductDetail from '@components/templates/product/ProductDetail.vue';
-import { defineComponent, useContext, ref, onMounted, onBeforeUnmount, computed, watch } from '@nuxtjs/composition-api';
+import { defineComponent, useContext, ref, onMounted, onBeforeUnmount, computed, watch, useMeta, useRoute } from '@nuxtjs/composition-api';
 
 export default defineComponent({
     name: 'product-page',
     components: {
-        ProductDetail,
-        RelatedProducts,
+        ProductDetail: () => import('@components/templates/product/ProductDetail.vue'),
+        RelatedProducts: () => import('@components/organisms/DjFeaturedProducts/DjFeaturedProducts.vue'),
         BreadCrumb,
     },
     props: {
@@ -31,12 +29,14 @@ export default defineComponent({
     },
     setup(props) {
         const ctx = useContext();
+        const route = useRoute();
+        const { title, meta } = useMeta();
+
         const skuProduct = props.sku;
         const product = ref(null);
         const reviews = ref(null);
         const offers = ref(null);
         const variantsProduct = ref(null);
-        let productTitle = ref('');
         const locale = ref(ctx.i18n.locale);
         const i18n = ctx.i18n.messages[locale.value];
         const relatedProducts = ref(null);
@@ -67,11 +67,49 @@ export default defineComponent({
         });
 
         onMounted(async () => {
-            variantsProduct.value = await ctx.$core.useProduct.getProductsVariants(skuProduct);
-            offers.value = await ctx.$core.useOffer.getProductOffers(skuProduct);
-            product.value = await ctx.$core.useProduct.getProductsById(skuProduct);
-            relatedProducts.value = await ctx.$core.useProduct.getRelatedProductsById(skuProduct);
-            reviews.value = await ctx.$core.useProduct.getProductsReviews(skuProduct);
+            const [
+                variantsData,
+                offersData,
+                productData,
+                relatedProductsData,
+                reviewsData
+            ] = await Promise.all([
+                ctx.$core.useProduct.getProductsVariants(skuProduct),
+                ctx.$core.useOffer.getProductOffers(skuProduct),
+                ctx.$core.useProduct.getProductsById(skuProduct),
+                ctx.$core.useProduct.getRelatedProductsById(skuProduct),
+                ctx.$core.useProduct.getProductsReviews(skuProduct)
+            ]);
+
+            variantsProduct.value = variantsData;
+            offers.value = offersData;
+            product.value = productData;
+            relatedProducts.value = relatedProductsData;
+            reviews.value = reviewsData;
+
+            // SEO Meta Tags
+            const productTitle = product.value?.name;
+            const productDescription = product.value?.shortDescription || product.value?.description;
+            const productBrand = product.value?.brand;
+            const productImageUrl = product.value?.mainImage?.url;
+            const canonicalUrl = `https://djust.io${route.value.path}`;
+
+            title.value = `${productTitle} - ${productBrand}`;
+            meta.value = [
+                { hid: 'description', name: 'description', content: productDescription },
+                // Open Graph
+                { hid: 'og:title', property: 'og:title', content: title.value },
+                { hid: 'og:description', property: 'og:description', content: productDescription },
+                { hid: 'og:type', property: 'og:type', content: 'product' },
+                { hid: 'og:url', property: 'og:url', content: canonicalUrl },
+                { hid: 'og:image', property: 'og:image', content: productImageUrl },
+                // Twitter Card
+                { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+                { hid: 'twitter:title', name: 'twitter:title', content: title.value },
+                { hid: 'twitter:description', name: 'twitter:description', content: productDescription },
+                { hid: 'twitter:image', name: 'twitter:image', content: productImageUrl },
+            ];
+
             if (product?.value?.navigationCategories[0]?.id) {
                 category = await ctx.$core.useCategories.getNavigationCategoriesById(
                     product.value.navigationCategories[0]?.id
@@ -120,14 +158,8 @@ export default defineComponent({
             reviews.value = null;
             relatedProducts.value = null;
         });
-        function head() {
-            return {
-                titleTemplate: `${productTitle.value} - Djust.io`,
-                title: `${productTitle.value} @(${productTitle.value}) - Nuxt.js`,
-                meta: [{ hid: 'description', name: 'description', content: 'About our company Nuxt.js ' }],
-            };
-        }
-        return { product, reviews, variantsProduct, breadCrumb, productTitle, offers, relatedProducts, head };
+
+        return { product, reviews, variantsProduct, breadCrumb, offers, relatedProducts };
     },
 });
 </script>
