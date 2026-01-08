@@ -1,0 +1,1 @@
+//page générique pour socoda

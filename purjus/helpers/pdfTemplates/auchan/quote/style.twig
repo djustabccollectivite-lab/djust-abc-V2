@@ -1,0 +1,274 @@
+<style>
+    .address-format {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date-place {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 9 / 11;
+    }
+
+    .date-place :nth-child(even) {
+        border: 1px solid black;
+    }
+
+    .date-place :nth-child(odd) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .sign-title {
+        grid-column: span 9;
+    }
+
+    .sign-rect {
+        border: 1px solid black;
+        height: 100px;
+        width: 100%;
+        grid-column: 1 / 8;
+        padding: 5px;
+    }
+
+    .sign {
+        gap: 5px;
+    }
+
+    .pdf-container {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 0.1px;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    .pdf-part {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        margin-bottom: 10px;
+    }
+
+    .header-logo {
+        grid-column: span 9;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .footer-logo {
+        grid-column: span 9;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    }
+
+    .seller-contact,
+    .buyer-contact {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .seller-contact {
+        grid-column: 1 / 4;
+        border-right: none;
+    }
+
+    .buyer-contact {
+        grid-column: 4 / 11;
+    }
+
+    .contact-header {
+        font-weight: bold;
+        border-bottom: 1px solid black;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .seller-contact-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+    }
+
+    .seller-contact-body :nth-child(odd) {
+        grid-column: 1;
+    }
+
+    .seller-contact-body :nth-child(even) {
+        grid-column: 2 / 4;
+    }
+
+    .buyer-contact-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .left-part-body-contact {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+
+    .left-part-body-contact :nth-child(even) {
+        grid-column: span 2;
+    }
+
+    .right-part-body-contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+
+    .right-part-body-contact :nth-child(even) {
+        grid-column: span 2;
+    }
+
+    .left-align {
+        text-align: left;
+    }
+
+    .right-align {
+        text-align: right;
+    }
+
+    .quote-date {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote-date :last-child,
+    .quote-number :last-child {
+        border: 1px solid rgb(158, 158, 158);
+        text-align: center;
+    }
+
+    .quote-number {
+        grid-column: 5 / 9;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote-details {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-column: 1 / 11;
+    }
+
+    .detail-header {
+        background-color: #288886;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        border-top: 1px solid rgb(158, 158, 158);
+
+        &.main {
+            width: 180px;
+        }
+    }
+
+    .detail-line {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-column: 1 / 12;
+    }
+
+    .detail-line>span {
+        border: 1px solid rgb(158, 158, 158);
+        text-align: center;
+        padding: 5px;
+        word-break: break-word;
+
+        &.main {
+            width: 180px;
+        }
+    }
+    .terms {
+        grid-column: 1 / 5;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .total {
+        display: grid;
+        width: 60%;
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .total>span {
+        padding: 5px;
+    }
+
+    .total> :nth-child(even) {
+        border: 1px solid rgb(158, 158, 158);
+        text-align: center;
+
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .small {
+        font-size: 10px;
+    }
+
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .wrap-word {
+        word-wrap: break-word;
+    }
+    .total-part {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        margin-bottom: 10px;
+    }
+    .bottom-part{
+        display: flex
+        flex-direction: row;
+    }
+    .bottom-border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tva {
+        display: grid;
+        width: 40%;
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .tva> :nth-child(even) {
+        border: 1px solid rgb(158, 158, 158);
+        text-align: center;
+    }
+    .cadre {
+        grid-column: 5 / 11;
+        display: flex;
+        justify-content: space-between;
+    } 
+    .text-tva {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

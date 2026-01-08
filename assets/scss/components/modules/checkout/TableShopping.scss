@@ -1,0 +1,241 @@
+.form-group--number {
+    display: inline-block;
+    position: relative;
+
+    button {
+        background: none;
+        border: none;
+        background-color: transparent;
+        @include vertical-align();
+        width: 20px;
+        height: 20px;
+        max-width: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        line-height: 1em;
+
+        &.up {
+            right: 10px;
+        }
+
+        &.down {
+            left: 10px;
+        }
+    }
+
+    .form-control {
+        border: 1px solid #00000061;
+        height: 40px;
+        padding: 0 25px;
+        text-align: center;
+        font-size: 14px;
+        @include border-radius(4px);
+        background-color: transparent;
+    }
+}
+
+.dj-table--shopping-cart {
+    border-collapse: separate;
+    border-spacing: 10px;
+    thead {
+        tr {
+            th {
+                padding: 15px 20px;
+                text-transform: uppercase;
+                color: var(--color-body);
+                text-align: center;
+                font-weight: 600;
+                background-color: #fff;
+                border: none;
+                &:first-child {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px 1px rgba(105, 105, 105, 0.25);
+            border-radius: 20px;
+            td:first-child {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            td:last-child {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            td {
+                padding: 20px 10px;
+                vertical-align: sub;
+                font-size: 16px;
+                background-color: #fff;
+                .form-group--number {
+                    max-width: 100px;
+                    display: inline-block;
+                    input {
+                        border-radius: 0;
+                    }
+                }
+                .dj-product--cart {
+                    max-width: 600px;
+                }
+                &:first-child {
+                    width: 360px;
+                }
+                &:last-child {
+                    a {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                    &:last-child {
+                        //text-align: right;
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dj-table--quotes {
+    thead {
+        tr {
+            th {
+                padding: 15px 20px;
+                text-transform: uppercase;
+                color: var(--color-body);
+                text-align: center;
+                font-weight: 600;
+                background-color: #fff;
+                border: none;
+                &:first-child {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px 1px rgba(105, 105, 105, 0.25);
+            border-radius: 20px;
+            td:first-child {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            td:last-child {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            td {
+                padding: 20px 10px;
+                vertical-align: sub;
+                font-size: 16px;
+                background-color: #fff;
+                .form-group--number {
+                    max-width: 100px;
+                    display: inline-block;
+                    input {
+                        border-radius: 0;
+                    }
+                }
+                .dj-product--cart {
+                    max-width: 600px;
+                }
+                &:first-child {
+                    width: 360px;
+                }
+                &:last-child {
+                    a {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                    &:last-child {
+                        //text-align: right;
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dj-table--responsive {
+    p {
+        margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+        border: none;
+        thead {
+            display: none;
+        }
+        tbody {
+            display: block;
+            tr {
+                display: block;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+                td[data-label] {
+                    display: flex;
+                    align-items: flex-start;
+                    border: none;
+                    border-top: 1px solid #ddd;
+                    &:before {
+                        display: block;
+                        content: attr(data-label) ' :';
+                        margin-right: 10px;
+                        font-weight: 600;
+                        flex-basis: 100%;
+                        max-width: 30%;
+                    }
+                    &:first-child {
+                        border-top: none;
+                    }
+                }
+                &:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+}
+
+.form-group--number {
+    button {
+        color: var(--color-body);
+    }
+    .form-control {
+        border: 1px solid #00000061;
+        color: var(--color-body);
+        background-color: transparent;
+        border-radius: 4px;
+        @include placeholder() {
+            color: var(--color-body);
+        }
+    }
+}

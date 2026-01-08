@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h1 class="title">Purchase Order</h1>
+		<div class="heading">
+			<div class="head-recap">
+				<div>ORDER PLACED:
+					{{date}}</div>
+				<div>SOLD BY:
+					{{seller}}</div>
+				<div>DISPATCH TO:
+					{{dispatchTo}}</div>
+			</div>
+			<div class="head-recap">
+				<div>TOTAL:
+					{{total}}
+					{{currency}}</div>
+				<div>TOTAL WITH TAX:
+					{{totalWithTax}}
+					{{currency}}</div>
+				<div>ORDER NUMBER:
+					{{ number }}</div>
+				<div>STATUS:
+					{{status}}</div>
+			</div>
+		</div>
+		<div class="products">
+			<div>Product Name</div>
+			<div>Product Price</div>
+			<div>Quantity</div>
+			<div>Amount</div>
+			{% for product in products %}
+				<div>{{product.orderLogisticLineProductDto.name}}</div>
+				<div>{{product.orderLogisticLinePriceDto.price}}
+					{{currency}}</div>
+				<div>{{product.quantity}}</div>
+				<div>{{product.orderLogisticLinePriceDto.price * product.quantity}}
+					{{currency}}</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
+{{static.style}}

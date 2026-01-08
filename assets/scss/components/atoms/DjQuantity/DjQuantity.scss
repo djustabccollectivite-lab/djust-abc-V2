@@ -1,0 +1,74 @@
+.quantity_to_cart {
+    input {
+        border: 0.5px solid #1c1c1c;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: white !important;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    input.form-fixer {
+        padding: 20px;
+        font-family: var(--font-2nd) !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1c1c1c;
+    }
+
+    .v-input input {
+        max-height: 35px;
+    }
+
+    .form-group--number .form-control {
+        height: 35px;
+        width: 80px;
+        max-width: 100%;
+        min-width: 110px;
+    }
+    .form-group--number button.down {
+        left: 1px;
+        //padding: 21px 18px;
+    }
+    .form-group--number button.up {
+        right: 1px;
+        //padding: 21px 18px;
+    }
+}
+.quantityRound {
+    display: flex;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+    .qt-round {
+        width: 40px;
+        text-align: center;
+    }
+    // .increment-style {
+    //     font-weight: bold;
+    //     font-size: 16px;
+    // }
+    .iconsize {
+        font-size: 22px;
+    }
+    .icon-plus-circle {
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+}

@@ -1,0 +1,51 @@
+.dj-section--account-setting {
+    .dj-section__header {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d1d1d1;
+        h3,
+        .title__h3 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+    .dj-section__content {
+        padding: 20px;
+        background-color: #fff;
+    }
+    .dj-section__content_invoices {
+        padding: 0px;
+        background-color: white;
+    }
+    .dj-section-invoice__header {
+        padding-bottom: 0px;
+        border: 1px #ddd solid;
+        background-color: #f6f6f6 !important;
+        justify-content: space-between;
+        h3,
+        .title__h3 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+    .dj-section-invoice__content {
+        padding-top: 10px;
+        margin-top: -1px;
+        border: 1px #ddd solid;
+        background-color: #fff;
+    }
+}
+
+.dj-section-invoice__content .dj-product--cart,
+.ps-whishlist .dj-product--cart {
+    .dj-product__thumbnail {
+        max-width: 40px;
+    }
+    @media screen and (min-width: 480px) {
+        .dj-product__thumbnail {
+            max-width: 60px;
+        }
+    }
+}

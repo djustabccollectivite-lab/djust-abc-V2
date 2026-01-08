@@ -1,0 +1,181 @@
+.dj-layout--shop {
+    //padding-top: 25px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    > * {
+        width: 100%;
+    }
+    .dj-layout__left {
+        width: 100%;
+        min-width: 250px;
+        max-width: 250px;
+        padding-right: 30px;
+    }
+    .dj-layout__right {
+        max-width: calc(100% - 320px);
+        .owl-slider {
+            max-width: 100%;
+        }
+    }
+    @include media('<lg') {
+        flex-flow: column-reverse wrap;
+        .dj-layout__left {
+            max-width: 100%;
+            padding-right: 0;
+            display: none;
+        }
+        .dj-layout__right {
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    @include media('<sm') {
+        padding-bottom: 45px;
+    }
+}
+.dj-shopping {
+    .dj-shopping__view {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        p {
+            margin-bottom: 0;
+            margin-right: 20px;
+            color: var(--color-body);
+        }
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                a {
+                    font-size: 24px;
+                    color: var(--color-secondary);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    a {
+                        color: var(--color-body);
+                    }
+                }
+            }
+        }
+    }
+    .dj-shopping__actions {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        .dj-shopping__view {
+            padding-left: 40px;
+        }
+        .form-control {
+            height: 40px;
+            background-color: #fff;
+            border: 0.4px solid var(--color-secondary);
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .dj-tab-list {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+    .dj-shopping__header {
+        //margin-bottom: 40px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: #ffffff;
+        align-items: center;
+        @extend %list-reset;
+        padding: 20px 15px;
+        p {
+            margin-bottom: 0;
+            display: inline-block;
+            strong {
+                color: var(--color-body);
+            }
+        }
+    }
+    .ps-shop__filter-mb {
+        margin-bottom: 30px;
+        font-size: 16px;
+        vertical-align: top;
+        display: flex;
+        color: var(--color-body);
+        align-items: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        i {
+            font-weight: 700;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
+    .dj-shopping__queries {
+        padding-bottom: 16px;
+        a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            line-height: 20px;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            border: 1px solid var(--color-grey);
+            color: var(--color-body);
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 1680px) and (min-width: 1440px) {
+        .row {
+            .col-xl-2 {
+                max-width: 20%;
+                flex-basis: 20%;
+            }
+        }
+    }
+    @media (max-width: 1440px) and (min-width: 1200px) {
+        .row {
+            .col-xl-2 {
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+        }
+    }
+    @include media('<lg') {
+        margin-top: 40px;
+    }
+    @include media('<sm') {
+        .dj-shopping__header {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            > * {
+                flex-basis: 100%;
+                max-width: 50%;
+            }
+            .dj-shopping__view {
+                padding-left: 10px;
+            }
+        }
+        .dj-shopping__actions {
+            width: 100%;
+            justify-content: flex-end;
+            .select2 {
+                display: none;
+            }
+        }
+    }
+}

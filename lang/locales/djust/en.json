@@ -1,0 +1,1153 @@
+{
+    "account": {
+        "address": {
+            "additionalAddress": "Additional address",
+            "address": "Address",
+            "city": "City",
+            "country": "Country",
+            "createAddress": "Create address",
+            "createtitle": "Create address",
+            "delete": "Delete",
+            "deleteAddress": "Deleting an address",
+            "deleteConfirm": "Are you sure you want to delete this address?",
+            "editAddress": "Edit Address",
+            "edittitle": "Edit Address",
+            "errorDeleteAddress": "Erreur lors de la suppression d'adresse",
+            "fullName": "Full Name",
+            "label": "Label",
+            "modify": "Modify",
+            "phone": "Phone",
+            "register": "Register",
+            "state": "State",
+            "titleAddress": "Your address",
+            "zipcode": "zipcode",
+            "typeofAddress": "Type of Address",
+            "shipping": "Shipping",
+            "billing": "Billing",
+            "save": "Save"
+        },
+        "checkoutInformation": "Checkout information",
+        "compare": {
+            "compareEmpty": "Compare list is empty!",
+            "compareProduct": "Compare product"
+        },
+        "orderTracking": {
+            "billingEmail": "Billing Email",
+            "deliveryNote": "Delivery note",
+            "desc": "To track your order please enter your Order ID in the box below and press the Track button. This was given to you on your receipt and in the confirmation email you should have received.",
+            "document": "Document",
+            "heading": "Order tracking",
+            "invoice": "Invoice",
+            "logisticStatus": "Shipping status",
+            "order": "order",
+            "orderDetail": {
+                "address": "Address",
+                "back": "Back to orders",
+                "billingAddress": "Billing Address",
+                "city": "City",
+                "country": "Country",
+                "name": "Name",
+                "payment": "Payment and documents",
+                "paymentMethod": "Payment method",
+                "phone": "Phone",
+                "shippingAddress": "Shipping Address"
+            },
+            "orderId": "Order ID",
+            "paymentStatus": "Payment status",
+            "trackYourOrder": "Track Your Order"
+        },
+        "orders": {
+            "tracking": {
+                "title": "Order Tracking",
+                "instruction": "To track your order please enter your Order ID in the box below and press the \"Track\" button. This was given to you on your receipt and in the confirmation email you should have received.",
+                "label": "Order ID",
+                "placeholder": "Found in your order confimation email",
+                "emailLabel": "Billing Email"
+            },
+            "allYourOrders": "All your orders",
+            "complaint": {
+                "message": "Write your message here",
+                "motif": "Please choose a reason?",
+                "submotif": "Details of your request",
+                "title": "What is your message",
+                "validate": "send my message"
+            },
+            "invoice": {
+                "OrderPlaced": "ORDER PLACED",
+                "amount": "amount",
+                "buttons": {
+                    "archiveOrder": "Archive order",
+                    "buyItAgain": "Buy it again",
+                    "confirmDelivery": "Confirm delivery",
+                    "openComplaint": "Open Complaint",
+                    "problemWithOrder": "Contact Seller",
+                    "refuseOrder": "Refuse Order",
+                    "validateOrder": "Validate Order",
+                    "writeProductReview": "Write a product review",
+                    "followDelivery": "Follow delivery",
+                    "signalProblem": "Signal a problem"
+                },
+                "dispatchTop": "DISPATCH TO",
+                "numberOfProducts": "Number of products",
+                "price": "price",
+                "product": "product",
+                "quantity": "quantity",
+                "shippingFees": "Shipping fees",
+                "soldBy": "SOLD BY",
+                "total": "TOTAL",
+                "totalWithTax": "TOTAL TTC"
+            },
+            "myOrders": "My orders",
+            "myOrdersShipped": "My orders SHIPPED",
+            "myOrdersToApprove": "My orders to approve",
+            "myOrdersWaitingForApproval": "My orders waiting for approval",
+            "myOrdersWithIncident": "My orders with incident",
+            "noOrders": "You don't have any order",
+            "noOrdersShipped": "You don't have any order shipped",
+            "noOrdersToApprove": "You don't have any order to approve",
+            "noOrdersWaitingForApproval": "You don't have any order waiting for approval",
+            "noOrdersWithIncident": "You don't have any order with accident",
+            "review": {
+                "message": "write here your review",
+                "title": "review",
+                "validate": "Send my review"
+            },
+            "summary": "Summary",
+            "title": "Your orders",
+            "totalProductHT": "Subtotal product revenue before tax",
+            "totalShippingHT": "Subtotal shipping revenue before tax",
+            "vat": "VAT Product",
+            "vatShipping": "TVA shipping",
+            "shipping": "Shipping Fees",
+            "included": "Included",
+            "timeline": {
+                "CREATED": "Created",
+                "DECLINED_BY_SUPPLIER": "Declined by supplier",
+                "DECLINED_BY_CUSTOMER": "Declined by customer",
+                "ORDER_CREATED": "Order created",
+                "WAITING_FOR_APPROVAL": "Waiting for approval",
+                "PREPARATION": "Preparation",
+                "WAITING_FOR_SHIPMENT": "Waiting for shipment",
+                "DELIVERY": "Delivery",
+                "WAITING_CUSTOMER_APPROVAL": "Waiting customer approval",
+                "WAITING_SUPPLIER_APPROVAL": "Waiting supplier approval",
+                "VALIDATED": "Validated",
+                "PREPARED": "Prepared",
+                "SHIPPED": "Shipped",
+                "COMPLETED": "Completed",
+                "CANCELED": "Canceled"
+            },
+            "orderProductTitle": "Products in this order",
+            "deliveryTo": "Delivery to",
+            "orderProductsTable": {
+                "productName": "Product name",
+                "price": "Price",
+                "quantity": "Quantity",
+                "totalPrice": "Total price"
+            },
+            "vatIncluded": "VAT included",
+            "paymentStatus": {
+                "AUTHORIZED": "Authorized",
+                "WAITING_AUTHORIZATION": "Waiting authorization",
+                "WAITING_PAYMENT": "Waiting payment",
+                "PAID": "Paid",
+                "PARTIALLY_PAID": "Partially paid",
+                "OVER_PAID": "Over paid",
+                "REFUSED": "Refused",
+                "WAITING_REFUND": "Waiting refund",
+                "PARTIALLY_REFUNDED": "Partially refunded",
+                "REFUNDED": "Refund"
+            },
+            "shippingStatus": {
+                "ORDER_CREATED": "Order created",
+                "CREATING": "Creating",
+                "WAITING_CUSTOMER_APPROVAL": "Waiting customer approval",
+                "WAITING_SUPPLIER_APPROVAL": "Waiting supplier approval",
+                "DECLINED_BY_CUSTOMER": "Declined by supplier",
+                "ACCEPTED_BY_SUPPLIER": "Accepted by supplier",
+                "WAITING_SHIPMENT": "Waiting shipment",
+                "PARTIALLY_SHIPPED": "Partially shipped",
+                "SHIPPED": "Shipped",
+                "COMPLETED": "Completed",
+                "CANCELED": "Canceled",
+                "DECLINED_BY_SUPPLIER": "Declined by supplier"
+            },
+            "orderDate": "order date",
+            "soldBy": "Sold by",
+            "shipment": "Shipment",
+            "internalOrderNumber": "Internal order number",
+            "poNumberOrder": "PO number order",
+            "paymentTracking": "Payment tracking",
+            "vendor": {
+                "vendorMessgaeLink": "(More info)",
+                "vendorMessage": "Message from the seller "
+            },
+            "orderListHeaders": {
+                "orderId": "Order ID",
+                "orderDate": "Order date",
+                "nbrProduct": "Nbr product",
+                "total": "Total",
+                "shipmentTracking": "Shipment tracking",
+                "paymentTracking": "Payment tracking"
+            },
+            "seeMore": "See more",
+            "placeholder": "Reference"
+        },
+        "organisation": {
+            "updateUser": "The user has been changed",
+            "belongsToOrganisation": "Unable to modify, you do not belong to this organization",
+            "accountManager": "Name of manager",
+            "addOrga": "Add organisation",
+            "business": "Business number",
+            "cancel": "Cancel",
+            "compagny": "Company number",
+            "createAddress": "Create address",
+            "createUser": "Create a user",
+            "edit": "Edit",
+            "editAddress": "Modify address",
+            "editUser": "Modify user",
+            "group": "Group",
+            "name": "Name",
+            "noButton": "No",
+            "parentOrga": "Parent of organisation",
+            "role": "Role",
+            "titleAddress": "Address",
+            "titleCustom": "Change the organisation",
+            "titleOrga": "My organisations",
+            "titleUser": "Users",
+            "vat": "TVA",
+            "website": "Website",
+            "yesButton": "Yes"
+        },
+        "quicklink": {
+            "accountInformation": "Account Information",
+            "address": "Address",
+            "invoices": "Invoices",
+            "notifications": "Notifications",
+            "recentViewedProduct": "Address",
+            "wishlist": "Address"
+        },
+        "quotes": {
+            "NumberOfProducts": "Quantity of products",
+            "NumberOfProduct": "Quantity of product",
+            "acceptthisquote": "Accept quote",
+            "actions": "Actions",
+            "address": "Address",
+            "createdAt": "Created on",
+            "delete": "Delete",
+            "listOfProducts": "Product list",
+            "masterQuoteName": "Name",
+            "newQuote": "New quotes",
+            "oldQuote": "Old quotes",
+            "pendingQuote": "Ongoing quotes",
+            "price": "Price",
+            "product": "Product",
+            "products": "Products",
+            "quantity": "Quantity",
+            "quantity&address": "Quantity & shipping address",
+            "quote": "Quote",
+            "quoteInformation": "Information",
+            "quoteInformations": "Informations",
+            "quotes": "Quotes",
+            "refusethisquote": "Refuse quote",
+            "seeDetails": "Show",
+            "shippingAddress": "Shipping Address",
+            "splitDelivery": "Split Delivery",
+            "status": "Status",
+            "statutOfYourquote": "Status",
+            "step1": "Product",
+            "step2": "Billing address",
+            "step3": "Suppliers List :",
+            "step4": "Shipping Address",
+            "step3Creation": "Comments",
+            "step3message": "Write a message",
+            "supplierName": "Supplier",
+            "suppliers": "Suppliers",
+            "total": "Total Price",
+            "totalPrice": "Total Price",
+            "tprice": "Total",
+            "uprice": "Price (Unit)",
+            "validate": "Validate",
+            "waitingForTreatment": "Waiting for treatment",
+            "youhave": "You have",
+            "totalproductte": "Total products (tax excl.)",
+            "totalproducttax": "Total products tax",
+            "totalshippingte": "Total shipping (tax excl.)",
+            "totalshippingtax": "Total shipping tax",
+            "totalti": "Total (tax incl.)",
+            "refuseDialogHeading": "Refuse Quote",
+            "refuseDialogDescription": "Are you sure you want to refuse this quote?"
+        }
+    },
+    "accountLayout": {
+        "addresses": "Addresses",
+        "adresses": "Address",
+        "commandes": "Order",
+        "contact": "Djust for you",
+        "devis": "List of quote",
+        "favoris": "Favorites",
+        "logout": "Log out",
+        "orders": "Orders",
+        "organisations": "Organisations",
+        "profile": "Profile",
+        "quotes": "Quotes",
+        "wishlist": "Wishlist",
+        "userInformations": {
+            "text": "Get and update your personal informations.",
+            "civility": {
+                "mister": "Mr",
+                "miss": "Ms"
+            }
+        }
+    },
+    "buyingList": {
+        "copy": "Copy",
+        "selectAll": "Select all",
+        "created": "Created",
+        "actionModal": "What do you want to do with the wishlist?",
+        "addCartTheList": "Add all products to cart",
+        "shareTheList": "Share wishlist",
+        "duplicateList": "Duplicate wishlist",
+        "duplicateWishList": "What name would you give the new wishlist?",
+        "duplicateButton": "Duplicate",
+        "deleteList": "Delete wishlist",
+        "duplicateTitleModal": "Who do you want to send the wishlist to?",
+        "duplicateToEmail": "New owner's email",
+        "addAnotherEmail": "Add another recipient",
+        "buttonToTransfer": "Transfer",
+        "nameToTransferWishList": "WishList name for recipient",
+        "toastDeleteListSuccess": "Wishlist has been deleted",
+        "toastDuplicateListSuccess": "Wishlist has been duplicated",
+        "toastTransferListSuccess": "Wishlist has been transfer",
+        "toastTransferListError": "Error transferring wishlist",
+        "toastDuplicateListError": "Error during wishlist duplication.",
+        "myLists": "My lists ({number})",
+        "label": "List name",
+        "global": {
+            "action": "actions",
+            "date": "creation date",
+            "name": "name",
+            "nbProducts": "nb products"
+        },
+        "table": {
+            "productName": "Product Name",
+            "quantity": "Quantity",
+            "total": "Price",
+            "unitPrice": "Unit Price"
+        }
+    },
+    "cart": {
+        "ProceedToCheckoutButton": "Proceed to checkout",
+        "backToShopButton": "Back to shop",
+        "close": "Close",
+        "confirmCommand": "Confirm your order ( After this step, your order will be placed directly )",
+        "emptyCart": "Your Cart is empty",
+        "shoppingCart": "shopping cart",
+        "subTotal": "Subtotal",
+        "summary": "Summary",
+        "supplier": "Adhérent",
+        "table": {
+            "action": "Action",
+            "price": "Price",
+            "product": "product",
+            "quantity": "Quantity",
+            "total": "Total"
+        },
+        "total": "Total"
+    },
+    "checkout": {
+        "breadcrumb": {
+            "basketHeading": "Basket",
+            "basketDescription": "See details",
+            "billingHeading": "Invoicing information",
+            "billingDescription": "Invoicing address",
+            "shippingHeading": "Shipping information",
+            "shippingDescription": "Shipping address",
+            "paymentHeading": "Payment",
+            "paymentDescription": "Payment details",
+            "confirmationHeading": "Order confirmation",
+            "confirmationDescription": "Order details"
+        },
+        "aboutStore": "About our store",
+        "description": "You may also life out other types of products here are our categories",
+        "billing": {
+            "backToShoppingCart": "Return to shopping cart",
+            "billingAddress": "Billing address",
+            "missBillingAddress": "Miss billing address",
+            "close": "close",
+            "continueButton": "continue to shipping",
+            "messageBeforeContinue": "Before continue, please select a Billing Address ",
+            "selectButton": "select this address",
+            "selectButtonOk": "address  selected",
+            "chooseYourBillingAddress": "Choose your Billing Address",
+            "title": "Your Billing Address",
+            "shooseYoutBillingAddress": "Choose you Billing Address"
+        },
+        "oderSummary": {
+            "calculateNextStep": "Calculated at next step",
+            "product": "Product",
+            "shipping": "shipping",
+            "subtotal": "subtotal",
+            "total": "total",
+            "yourOrder": "yourOrder"
+        },
+        "orderValidation": {
+            "amount": "Amount",
+            "billingAddress": "Billing Address",
+            "confirmed": "confirmed",
+            "details": "Shipping details",
+            "order": "Order",
+            "orderItems": "Order items",
+            "price": "Price",
+            "product": "Product",
+            "quantity": "Quantity",
+            "shippingAddress": "Shipping Address",
+            "shippingType": "Shipping type",
+            "supplier": "Supplier",
+            "thankYou": "Thank you!"
+        },
+        "payment": {
+            "bankTransfer": "Bank Transfer",
+            "bankTransferDelay": "Your transfer must be made within a maximum of 72 hours",
+            "cardHoders": "Card Hoders",
+            "cardNumber": "Card Number",
+            "condition": "By making this purchase you agree to our terms and conditions",
+            "creditCard": "Credit Card",
+            "dueDate": "on the due date",
+            "expirationDate": "Expiration Date",
+            "immediate": "Immediate",
+            "internationalShipping": "International Shipping",
+            "paymentMethods": "Payment Methods",
+            "return": "Return to shipping",
+            "shippingMethods": "Shipping Method",
+            "submit": "Submit",
+            "title": "Payment",
+            "iAcceptCgu": "I accept",
+            "cgu": "sales conditions and terms",
+            "promo": {
+                "title": "Enter promotion",
+                "placeholder": "Promo code",
+                "button": "Validate",
+                "notValid": "This code is not valid"
+            },
+            "choose": "Select this payment type"
+        },
+        "shipping": {
+            "address": "Shipping address",
+            "alertDeleteItem": " has been removed from your basket.",
+            "alertMessageAddress": "Please select an address for each line",
+            "alertMessageQuantity": "Your quantity must equal to 1 or more for each line",
+            "alertMessageShippingType": "You should select a shipping type",
+            "chooseYourShippingAddress": "Choose your shipping address",
+            "confirmCommand": "Confirmation of order",
+            "continue": "Continue to payment",
+            "deliveryMode": "Delivery Mode",
+            "missShippingAddress": "Miss shipping address",
+            "priceHT": "Price",
+            "quantity": "Quantity",
+            "return": "Return to billing",
+            "selectAnAddress": "Select an address",
+            "shipping": "Shipping",
+            "shippingDetail": "Shipping details",
+            "splitDelivery": "Split delivery",
+            "title": "Shipping Information"
+        },
+        "orderConfirmation": {
+            "thanks": "Thanks",
+            "forYourOrder": "for your order",
+            "orderNumber": "Order number:",
+            "yourOrder": "Your order",
+            "hasBeenCreated": "had been created. In case of payment by bank transfer, you will receive an email with all payment instructions.",
+            "orderConfirmed": "Order confirmed",
+            "orderDetails": "Order details",
+            "shippingParcels": "Shipping parcels:",
+            "invoicingAddress": "Invoicing address",
+            "totalOrderWithoutVat": "Total order (WVAT)",
+            "totalShippingFees": "Total Shipping fees",
+            "totalVatAmount": "Total VAT amount",
+            "totalOrderAmount": "Total Order amount",
+            "passedOrder": "Passed order",
+            "processing": "Processing",
+            "shipped": "Shipped",
+            "delivered": "Delivered"
+        }
+    },
+    "common": {
+        "breadscrum": {
+            "billing": "Billing",
+            "home": "Home page",
+            "payment": "Payment",
+            "searchResult": "Search results",
+            "shipping": "Shipping",
+            "shoppingCart": "Cart",
+            "userInformation": "User Information",
+            "orders": "Orders",
+            "orderDetails": "Order details",
+            "favorites": "Favourites lists"
+        },
+        "categories": "Categories",
+        "downloadApp": {
+            "content": "Shopping faster and easier with our app. Get a link to download the app to your phone",
+            "heading": "Download Djust App Now!"
+        },
+        "newsLetter": {
+            "content": "Subcribe to get information about products and coupons",
+            "heading": "Newsletter",
+            "placeholder": "your email"
+        },
+        "siteFeatures": {
+            "five": {
+                "img": "https://uploads-ssl.webflow.com/5ef3453fa84d4634ca41fd2c/5f1fd1fd76539c06d2a402ff_Order%20validation%20and%20tracking%20icon.svg",
+                "key": "Order validation and tracking",
+                "value": "View, validate and track orders from your online account"
+            },
+            "four": {
+                "img": "https://uploads-ssl.webflow.com/5ef3453fa84d4634ca41fd2c/5f1fd204fd976533c4cb1a5a_Unified%20checkout%20%20icon.svg",
+                "key": "Unified checkout",
+                "value": "Multi-vendor , multi-shipping"
+            },
+            "one": {
+                "img": "https://uploads-ssl.webflow.com/5ef3453fa84d4634ca41fd2c/5f1fd1fed53149e90b118bb5_Powerful%20search%20engine%20icon.svg",
+                "key": "Powerful search engine",
+                "value": "Find all products easily, and browse catalog"
+            },
+            "three": {
+                "img": "https://uploads-ssl.webflow.com/5ef3453fa84d4634ca41fd2c/5f1fd1f15fef45e4545c817d_B2B%20out%20of%20the%20box%20icon.svg",
+                "key": "B2B out of the box",
+                "value": "Quotation, bid management, re-order and much more"
+            },
+            "two": {
+                "img": "https://uploads-ssl.webflow.com/5ef3453fa84d4634ca41fd2c/5f1fd1fd1984d9505aa41feb_Personnalised%20catalog%20icon.svg",
+                "key": "Personnalised catalog and pricing",
+                "value": "Customer custom catalog and pricing"
+            }
+        },
+        "subscribe": "Subscribe",
+        "viewAll": "View all",
+        "seeAllOffers": "See all offers",
+        "brand": "brand",
+        "supplierRef": "supplier ref",
+        "showMore": "Show more",
+        "theUnit": "the unit",
+        "soldInPacksOf": "sold in packs of"
+    },
+    "fastOrder": {
+        "addProduct": "Add Product",
+        "files": "files",
+        "item": "Item",
+        "moreBtn": "View Details",
+        "noOffer": "No offer for this product",
+        "notFound": "Not found! Try with another keyword.",
+        "placeHolder": "I'm looking for",
+        "quantity": "Quantity",
+        "supplier": "Supplier",
+        "title": "Fast order",
+        "totalPrice": "Total Price",
+        "upload": "Drag your file(s) here",
+        "upload2": "or click to browse",
+        "uploading": "uploading",
+        "product": "Product",
+        "totalWithoutVat": "Total without VAT",
+        "homePage": "Home Page",
+        "fastOrder": "Fast Order"
+    },
+    "footer": {
+        "copyright": {
+            "abc": "The reference for urban furniture and equipment - ABC Collectivités Copyright &copy; 2024",
+            "acodis": "The reference for school and collective outdoor equipment - - ACODIS Copyright © 2024"
+        },
+        "widgetHeading": {
+            "contactUs": "Contact us",
+            "legalInformation": "Legal information",
+            "presentation": "Who are we ?",
+            "products": "Our products",
+            "legalNotice": "Legal notice",
+            "termsOfService": "Terms of Service",
+            "gdpr": "GDPR",
+            "bussiness": "Business",
+            "company": "Company",
+            "quickLink": "Quick links"
+        },
+        "widgetLinks": {
+            "aboutUs": "About Us",
+            "career": "Career",
+            "checkout": "Checkout",
+            "contact": "Contact",
+            "faqs": "FAQs",
+            "myAccount": "My account",
+            "ourPress": "Our Press",
+            "policy": "Policy",
+            "return": "Return",
+            "shipping": "Shipping",
+            "shop": "Shop",
+            "termAndCondition": "Term & Condition"
+        }
+    },
+    "forgotPassword": {
+        "backButton": "Back to login",
+        "description": "Enter your email and we'll send you instructions to reset your password",
+        "loginInputEmail": "Email",
+        "loginInputPwd": "Votre mot de passe",
+        "messageText1": "Please check your inbox",
+        "messageText2": "Unsure if that email address was correct?",
+        "remember": "Se souvenir de moi",
+        "retryButton": "Retry",
+        "submitButton": "Send Reset Link",
+        "successMsg": "Password link sent",
+        "title": "Forgot Password?",
+        "resetPassword": "Reset password"
+    },
+    "firstLogin": {
+        "description": "Enter your email address and we will send you instructions on how to create your password.",
+        "title": "First connection",
+        "button": "Send link"
+    },
+    "header": {
+        "accountMenu": {
+            "accountInformation": "My information",
+            "organization": "Organization",
+            "address": "Addresses",
+            "buyingList": "Buying Lists",
+            "logout": "Logout",
+            "orders": "Orders",
+            "quotes": "Quotes"
+        },
+        "links": {
+            "trackYourOrder": "TrackYourOrder"
+        },
+        "login": "Login",
+        "miniCart": {
+            "checkout": "Checkout",
+            "clearBasket": "Clear Cart",
+            "clearError": "Error while deleting the basket",
+            "clearSucessful": "Cart cleared successfully",
+            "delivery": "Free delivery from 2000€ excluding tax except exceptions",
+            "deliveryReport": "Delivery fees applied on step « Shipping information »",
+            "ecoPart": "Eco-part. tax excl.",
+            "noProduct": "No products in cart",
+            "subTotal": "Sub Total:",
+            "viewCart": "View Cart"
+        },
+        "navigationExtra": {
+            "fastOrder": "Fast order",
+            "sellOnDjust": "Sell on Djust",
+            "trackYourOrder": "Track Your Order",
+            "store-change": "Change account",
+            "chooseAccount": "Choose account",
+            "oneAccount": "No other account"
+        },
+        "register": "Register",
+        "prospect": {
+            "buy": "Buy now !",
+            "login": "My account",
+            "sell": "Publish your offer",
+            "signin": "Log in / Sign in"
+        },
+        "search": {
+            "button": "Search",
+            "loadingOffers": "loading offers...",
+            "noOffers": "no offers",
+            "placeholder": "I'm shopping for...",
+            "brand": "Looking for brand",
+            "supplier": "Looking for supplier"
+        },
+        "shopByDepartment": "Search by Department",
+        "welcome": "Welcome",
+        "wellcomeText": "Welcome to Djust Online Shopping Store!"
+    },
+    "homeDefault": {
+        "clothing": {
+            "heading": "Clothing"
+        },
+        "featuresProducts": {
+            "heading": "New Arrivals!",
+            "links": {
+                "bestSeller": "Best seller",
+                "mustPopular": "Must Popular",
+                "newArrivals": "New Arrivals"
+            }
+        },
+        "gardenAndKitchen": {
+            "heading": "Home, Garden & Kitchen"
+        },
+        "newArrivals": {
+            "heading": "Hot New Arrivals",
+            "links": {
+                "clothingAndApprel": "Clothing & Apparel",
+                "electronic": "Electronic",
+                "furnitures": "Furnitures",
+                "healthAndBeauty": "Health & Beauty",
+                "technologies": "Technologies"
+            }
+        },
+        "topCategories": "top catégories"
+    },
+    "layouts": {
+        "error": {
+            "pageNotFound": {
+                "title": "Ohh! Page not found",
+                "text": "It seems we can't find what you're looking for.<br>Go back to <a class=\"ps-highlight\" href=\"/\">Homepage</a>"
+            },
+            "otherError": {
+                "title": "Ohh ! An error occurred",
+                "text": "It seems that an unexpected error has occurred.<br>Return to the<a class=\"ps-highlight\" href=\"/\">Homepage</a>"
+            }
+        }
+    },
+    "login": {
+        "title": "Welcome back! Sign in!",
+        "forgotPassword": "Forgot your password?",
+        "firstConnection": "First Connection",
+        "loginButton": "Sign into your account",
+        "loginInputEmail": "Email",
+        "loginInputPwd": "Password",
+        "loginMessage": "Log In Your Account",
+        "remember": "Remember me",
+        "titleLogin": "Already an account? click here",
+        "titleNewClient": "Don't have any account ?",
+        "titleregisterlink": "Create an account",
+        "confirm": "Confirm",
+        "selectClient": "Select your client",
+        "yourClient": "Your client"
+    },
+    "marketPlace": {
+        "dealHotToday": "Deal of hot today"
+    },
+    "menu": {
+        "mainMenu": {
+            "home": "Home",
+            "shop": "Shop"
+        },
+        "navigationList": {
+            "cart": "Cart",
+            "categories": "Categories",
+            "menu": "Menu",
+            "search": "Search"
+        }
+    },
+    "notification": {
+        "search": "Searching for '{search}' returns no results...",
+        "address": {
+            "delete": "An address has been removed from your list address",
+            "success": " has been added to your address list",
+            "update": " has been updated"
+        },
+        "contact": {
+            "success": "Registration confirmed",
+            "error": "Please fill in the necessary fields.",
+            "alreadyExist": "This email already exists in our database",
+            "mailError": "Error sending message",
+            "mailSuccess": "Message sent successfully"
+        },
+        "error": "Error",
+        "login": {
+            "badCredentials": "User or password is not good",
+            "success": "Login successfully",
+            "userNotFound": "User or password is not good"
+        },
+        "order": {
+            "error": "Error with order update",
+            "update": "Your order has been updated"
+        },
+        "postReview": {
+            "error": "Your review has not been sent",
+            "update": "Your review has been sent"
+        },
+        "product": {
+            "buyingList": " has been added to your buyinglist",
+            "error": "The product has not been added to the basket",
+            "quantityError": "Quantity is lower than min ordable quantity",
+            "quote": " has been added to your quote",
+            "rmWishlist": " has been removed from your wishlist!",
+            "rmWishlist1": "A product has been removed from your wishlist!",
+            "stockError": "Not enough stock",
+            "onQuoteOnly": "Offer only on quote",
+            "success": "The product has been added to your basket",
+            "successMultipleProducts": "The products have been added to your basket",
+            "rejected": "1 product on quote not added in the cart | {products} products not added in the cart",
+            "minOrderQuantity": "Quantity must be a minimum of {minOrderQuantity}",
+            "addressNotFound": "A delivery adress is needed to continue shopping. Please add one in your account area",
+            "quotealreadyexist": "The quote name already exists for this user, please choose a new name.",
+            "addressError": "Please select a delivery address"
+        },
+        "quote": {
+            "delete": "A quote has been removed from your quote list",
+            "deleteQuote": "Delete quote",
+            "deleteValidationMessage": "Are your sure you want to delete this quote?",
+            "delivery": "You should have more than one shipping address to split delivery",
+            "refuse": "Your decision has been sent successfully",
+            "removeFailed": "A product has been removed from this quote",
+            "remove": "A product was removed from this quote",
+            "success": "Your Order has been sent successfully",
+            "validate": "Your decision has been sent successfully",
+            "quantityError": "Quantity must be equal to or greater than 1",
+            "quoteError": "An error occurred during the validation of quote",
+            "quoteValidate": "Your quote has been successfully validated"
+        },
+        "shipping": {
+            "errorOrder": "Error with order"
+        },
+        "succes": "Succes",
+        "user": {
+            "errorUpdate": "Error with user creation",
+            "noupdate": "Please make changes",
+            "update": "The changes have been made",
+            "vide": "Les champs sont vides."
+        }
+    },
+    "page": {
+        "about": {
+            "awardDesc": "Industry leaders and influencers recognize Overstock as one of the most trust worthy retail companies in the U.S., ranking high for both customer and employee satisfaction.",
+            "awardsAndRecognition": "Awards & Recognition"
+        },
+        "contact": {
+            "contactDirectly": "Contact Directly",
+            "contactUsForAnyQuestions": "Contact us for any questions",
+            "contactus": "Send Message",
+            "customerService": "Customer Service",
+            "form": {
+                "email": "Email",
+                "message": "Message",
+                "name": "Name",
+                "sendMessage": "Send message",
+                "subject": "Subject"
+            },
+            "getInTouch": "Get In Touch",
+            "headQuater": "Head Quater",
+            "mediaRelations": "Media Relations",
+            "sendCv": "Send your CV to our email",
+            "vendorSupport": "Vendor Support",
+            "workWithUs": "Work With Us"
+        },
+        "maintenance": {
+            "title": "We will come back very soon!",
+            "text": "Our website is under maintenance<br>We will be back soon to offer you the best eCommerce experience.",
+            "copyright": "{company}. All rights reserved"
+        },
+        "profile": {
+            "logout": "Logout",
+            "organisation": "My organization",
+            "profile": "My profil"
+        }
+    },
+    "product": {
+        "availableWithin": "Available within 1 day | Available within {days} days",
+        "réference": "Réference",
+        "brand": "Brand",
+        "quantityPer": "Quantity per {offerPackingType}:",
+        "typeOfPackaging": "Type of packaging:",
+        "buttonAddAllToCart": {
+            "button": "Add all to cart",
+            "confirmButtonContinue": "Continue Shopping",
+            "confirmButtonView": "view Cart",
+            "confirmMessage": "All products have been added to your cart!"
+        },
+        "buttonAddToBuyingList": {
+            "button": "Add to Buyinglist",
+            "chooseMessage": "Choose your buyinglist",
+            "confirmButtonContinue": "Continue Shopping",
+            "confirmButtonView": "view Cart",
+            "confirmMessage": "has been added to your buyinglist!",
+            "createButton": "Create",
+            "createMessage": "Create a new BuyingList",
+            "errorMessage": "has NOT been added to your buyinglist",
+            "selectMessage": "Please select a buyinglist"
+        },
+        "buttonAddToCart": {
+            "button": "Add to cart",
+            "confirmButtonContinue": "Continue Shopping",
+            "confirmButtonView": "view Cart",
+            "confirmMessage": "Your product has been added to your cart!"
+        },
+        "buttonAddToQuote": {
+            "button": "Add to quote",
+            "chooseMessage": "Choose a quote",
+            "confirmButtonContinue": "Continue Shopping",
+            "confirmButtonView": "view Cart",
+            "confirmMessage": "has been added to your quote!",
+            "createButton": "Create",
+            "createField": "name of your quote",
+            "createMessage": "or Please give a name to your quote",
+            "selectMessage": "Please select a quote and a quantity"
+        },
+        "contactSeller": "contact Seller",
+        "customerBought": "Customers who bought this item also bought",
+        "days": "days",
+        "delivery": "shipped in",
+        "discount": "Discount",
+        "exclTax": "excl. tax",
+        "noOffer": "no offer on this product",
+        "perSet": "per set",
+        "price": "Price",
+        "quantity": "Quantity",
+        "quantityInStock": "In Stock",
+        "relatedProducts": "Related products",
+        "review": "review",
+        "soldBy": "sold by",
+        "soldByItem": "sold by item",
+        "viewOffers": "View offers",
+        "soldBySet": "sold by set of ",
+        "supplier": "Supplier",
+        "tabs": {
+            "attributes": "Attributes",
+            "description": "Description",
+            "technicalSheet": "Technical sheet",
+            "offers": {
+                "2to4days": "2-4 days",
+                "address": "Adress",
+                "city": "City",
+                "country": "Country",
+                "delivery": "Delivery",
+                "deliveryOptions": "Delivery options",
+                "minoforder": "min of order: {minOrder}",
+                "name": "Name",
+                "otheroffers": " 1 more offer | {nbOffers} more offers",
+                "outofstock": "out of stock",
+                "price": "price",
+                "rating": "Rating",
+                "supplier": "Supplier",
+                "tabName": "Other Offers"
+            },
+            "reviews": {
+                "authenticationRequired": "you must be connected to post a review",
+                "button": "Submit Review",
+                "field": "Write your review here",
+                "postedBy": "posted by",
+                "review": "review",
+                "stars": "stars",
+                "submitMessageEmail": "Your email address will not be published. Required fields are marked",
+                "submitYourReview": "Submit Your Review",
+                "submitionError": "please write something before send your review",
+                "submitionValidation": "your review has been posted!",
+                "tabName": "Reviews",
+                "yourRating": "Your rating of this product"
+            },
+            "specifications": "Specifications",
+            "viewMore": "view more",
+            "videos": "Videos"
+        },
+        "viewPriceRange": "Price range",
+        "widget": {
+            "freeReturn": "Free 7-day return if eligible, so easy",
+            "payOnline": "Pay online or when receiving goods",
+            "registerNow": "Register Now!",
+            "sellOnDjust": "Sell on Djust",
+            "shippingWorldwide": "Shipping worldwide",
+            "supplier": "Supplier give bills for this product."
+        }
+    },
+    "register": {
+        "address": "Address",
+        "back": "Back",
+        "cancel": "Cancel",
+        "confirmEmail": "Please confirm your e-mail",
+        "confirmEmailDescription": "We have sent you an email, please click on the link to activate your account.",
+        "confirmEmailManualDescription": "Your account creation request has been taken into account. The operator will study your request, you will soon receive an email to confirm the activation of your account.",
+        "continueButton": "Continue (1/2)",
+        "confirmButton": "Confirm (2/2)",
+        "contactUs": {
+            "abc": "Contact us at the 05 49 33 57 81 ou by email",
+            "acodis": "Contact us at the 05 49 78 06 93 ou by email"
+        },
+        "error": {
+            "AcountNameIsRequired": "AcountName is require",
+            "AddressIsRequired": "Address is required",
+            "BusinessRegistrationNumberIsRequired": "Business Registration Number is required",
+            "CityIsRequired": "City is required",
+            "CivilityIsRequired": "Civility is required",
+            "CompanyRegistrationNameIsRequired": "Company Registration Name is required",
+            "ConfirmPasswordControle": "Values do not match",
+            "ConfirmPasswordRequired": "Please write your password a second time",
+            "CurrencyIsRequired": "Currency is required",
+            "EmailFormat": "E-mail must contain a @ and a .",
+            "EmailIsRequired": "Email is required",
+            "FirstNameIsRequired": "First Name is required",
+            "FullNameIsRequired": "Full Name is required",
+            "LabelIsRequired": "Label is required",
+            "LastNameIsRequired": "Last Name is required",
+            "PasswordFormat": "Password must be more than 8 characters",
+            "PasswordIsRequired": "Password is required",
+            "ZipCodeIsRequired": "Zip code is required"
+        },
+        "general": "General",
+        "labels": {
+            "VATNumber": "VAT Number",
+            "accountManager": "Account Manager",
+            "accountName": "Account Name",
+            "address": "Address",
+            "address2": "Address (comp)",
+            "addresse": "Address",
+            "billing": "Billing",
+            "businessRegistrationNumber": "Business Registration Number",
+            "city": "City",
+            "civility": "Civility",
+            "companyRegistrationName": "Company Registration Name",
+            "confirmpassword": "Confirm Password",
+            "country": "Country",
+            "currency": "currency",
+            "email": "Email",
+            "firstName": "First Name",
+            "fullName": "Attention of",
+            "label": "Address label",
+            "lastName": "Last Name",
+            "password": "Password",
+            "phone": "Phone",
+            "shipping": "Shipping",
+            "state": "State",
+            "website": "Website",
+            "zipCode": "ZipCode"
+        },
+        "messages": {
+            "CustomerAlreadyExist": "Already existing email OR already existing account name",
+            "CustomerCreate": "Customer create",
+            "CustomerUserAlreadyExist": "Customer user already exists",
+            "ProblemCreateCustomer": "Problem at create customer"
+        },
+        "needHelp": "Need help to create your account ?",
+        "passwordRules": "The password must contains at least 8 characters including 1 number, 1 uppercase letter, 1 lowercase letter and 1 special character.",
+        "registerButton": "Register",
+        "requiredField": "Mandatory fields",
+        "title": "Create your account",
+        "titleRegister": "Register",
+        "user": "User",
+        "differentShippingAddress": "Different shipping address"
+    },
+    "resetPassword": {
+        "InputCPwd": "Confirm Password",
+        "InputPwd": "Password",
+        "backButton": "Back to login",
+        "description": "Your new password must be different from previously used passwords",
+        "errorMessageText": "Session has expired, please try again.",
+        "errorMsg": "Reset password failed",
+        "messageText": "Your password has been changed successfully.",
+        "remember": "Se souvenir de moi",
+        "submitButton": "Set New Password",
+        "successMsg": "Password updated",
+        "title": "Reset Password"
+    },
+    "shop": {
+        "bestSaleOfMonth": "Best Seller In The Last Months",
+        "bestSeller": "Best Seller Items",
+        "breadCrumb": {
+            "home": "Home",
+            "shopCarousel": "Shop Carousel",
+            "shopDefault": "Shop Default"
+        },
+        "categories": {
+            "links": {
+                "allProducts": "All Products",
+                "babiesAndMoms": "Babies & Moms",
+                "bestSellers": "Best Sellers",
+                "booksAndOffice": "Books & Office",
+                "carsAndMotocycles": "Cars & Motocycles",
+                "clothingAndApparel": "Clothing & Apparel",
+                "computersAndTechnologies": "Computers & Technologies",
+                "consumerElectrics": "Consumer Electrics",
+                "gardenAndKitchen": "Garden & Kitchen",
+                "healthAndBeauty": "Health & Beauty",
+                "jewelryAndWatches": "Jewelry & Watches",
+                "newArrivals": "New Arrivals",
+                "phonesAndAccessories": "Phones & Accessories",
+                "sportAndOutdoor": "Sport & Outdoor"
+            }
+        },
+        "dealHot": "Top Super Hot Deals Today",
+        "filters": {
+            "categories": "Categories",
+            "title": "Filters",
+            "reset": "Reset"
+        },
+        "forTheCategory": "for the category: ",
+        "forVendor": "by this vendor: ",
+        "forYourSearch": "for your search: ",
+        "heading": {
+            "bestSellerItems": "Best Seller Items",
+            "clothingAndApparel": "Clothing & Apparel",
+            "consumerElectrics": "Consumer Electrics"
+        },
+        "newArrivals": "New Arrivals",
+        "productFoundPlur": "products",
+        "productFoundSing": "product",
+        "recommendedItems": "Recommended Items",
+        "shopAll": "Shop All",
+        "sort": {
+            "latest": "Sort by latest",
+            "popularity": "Sort by popularity",
+            "priceLtoH": "Sort by price: low to high",
+            "pricetHtoL": "Sort by price: high to low",
+            "rating": "Sort by average rating"
+        },
+        "view": "View",
+        "widget": {
+            "byBrands": "By Brands",
+            "byPrice": "By Price",
+            "categories": "Categories",
+            "price": "Price"
+        }
+    },
+    "supplier": {
+        "suppliers": "Suppliers",
+        "viewMore": "View more",
+        "totalOffers": "Total offers",
+        "seeOffers": "See offers",
+        "home": "Home",
+        "storeList": "Store List",
+        "searchPlaceholder": "Search..."
+    },
+    "validation": {
+        "failedValidationDescription": "The account activation was failed, your account is already activated or the link has expired. ",
+        "failedValidationTitle": "Account activation failed!",
+        "successValidationDescription": "The account activation has been successfully completed .",
+        "successValidationTitle": "The activation of the account has been successful!",
+        "btnResendLinkValidation": "Receive a new activation link",
+        "mailValidationSended": "A new email has been sent to you.",
+        "mailValidationNotSended": "An error has occurred. Please try again later."
+    },
+    "faq": {
+        "title": "Frequently asked questions",
+        "subtitle": "You have a question ? Can't find the answer you're looking for ?<br>Send a message or contact us by phone.",
+        "phone": "Contact us at <span class=\"font-700\">05 49 33 57 81</span>",
+        "email": "To write to us: <span class=\"font-700\">contact@fr-abc.com</span>"
+    },
+    "fastCart": {
+        "uploadDropzone": "Please drag and drop your internal order file here in order to create your order,",
+        "fileTypes": "Format accepted :",
+        "addFile": "Add a file",
+        "rmFile": "Remove file",
+        "uploadWarning": "Uploading a file for a quick order will delete any existing cart, are you sure you want to upload this file ?",
+        "instructions": "Instructions",
+        "title": "Internal Order files",
+        "subtitle": "You can add products by drag and droping your files below or load a file:",
+        "uploadBtn": "Upload this file",
+        "returnToCart": "Go to the cart",
+        "steps": {
+            "step1": "You click on load a file",
+            "step2": "You select a file with your folder explorer",
+            "step3": "You click on upload to send your file",
+            "step4": "Your file is uploading and processed",
+            "step5": "The processing is over you can check the report"
+        },
+        "fileLoading": "Your file is loading please wait....",
+        "fileUploaded": "Your file has been uploaded.",
+        "reportText1": "You can check the report of error here:",
+        "reportText2": "link to the report",
+        "reportText3": "errors listed",
+        "productimportsuccess": "Product import successful:",
+        "productimporterror": "Product import errors:"
+    },
+    "facets": {
+        "brands": "Brands",
+        "vendors": "Vendors"
+    },
+    "quote": {
+        "timeline": {
+            "CREATED": "Created",
+            "WAITING_FOR_SUPPLIER": "Waiting for supplier",
+            "ORDER_PASSED": "Order passed",
+            "DECLINED_BY_SUPPLIER": "Declined by supplier",
+            "WAITING_FOR_CUSTOMER": "Waiting for customer",
+            "DECLINED_BY_CUSTOMER": "Declined by customer",
+            "EXPIRED": "Expired"
+        }
+    }
+}

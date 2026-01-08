@@ -1,0 +1,18 @@
+<h1>Liste des erreurs a date: {{date}} </h1>
+<div class="error-grid">
+    <span class="center-text">Nom du produit</span>
+    <span class="center-text">Id du produit</span>
+    <span class="center-text">Quantité</span>
+    <span class="center-text">Raison</span>
+    <span class="center-text">Date</span>
+</div>
+<div class="error-grid">
+    {% for error in errors %}
+        <span>{{ error.productName }}</span>
+        <span>{{ error.id }}</span>
+        <span>{{ error.quantity }}</span>
+        <span>{{ error.error }}</span>
+        <span>{{error.date}}</span>
+    {% endfor %}
+</div>
+{{static.style}}

@@ -1,0 +1,102 @@
+.dj-card {
+    overflow: hidden;
+    background-color: var(--background-card-color);
+    border-radius: var(--border-radius-card);
+    border-top-width: 1px;
+    border-color: #e5e7eb;
+    border: var(--border-card);
+    box-shadow: var(--shadow-card);
+    .dj-card__content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        overflow: auto;
+        
+        @media (min-width: 640px) {
+            padding: 1.5rem;
+        }
+    }
+    .dj-card__morelink {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        padding: 5px 12px 5px 12px;
+        color: #4d4d4f;
+        border: 1px solid #4d4d4f;
+        box-sizing: border-box;
+        border-radius: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        i {
+            transform: translateY(1px);
+            margin-left: 0.25em;
+            font-size: 0.85em;
+            line-height: 1em;
+        }
+        &:hover {
+            color: var(--color-link);
+        }
+    }
+    .dj-card__header_slot {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        @media (min-width: 640px) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+    .dj-card__header {
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        box-shadow: 0px 2px 4px rgba(121, 121, 121, 0.25);
+        @media (min-width: 640px) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        h4,
+        .title__h4 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            //color: #FFFFFF;
+            margin-bottom: 0;
+        }
+    }
+    .dj-card__footer {
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        @media (min-width: 640px) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+    .dj-card__actions {
+        align-items: center;
+        display: flex;
+        padding: 8px;
+    }
+    &--small {
+        .dj-card__header {
+            h4,
+            .title__h4 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}

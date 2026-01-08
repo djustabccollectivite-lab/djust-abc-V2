@@ -1,0 +1,103 @@
+.dj-sidebar {
+    position: relative;
+    height: 100%;
+    padding-bottom: 100px;
+    > * {
+        flex-basis: 100%;
+    }
+    .dj-block--earning-count {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    .dj-block--user-wellcome {
+        margin-bottom: 40px;
+    }
+    .dj-sidebar__top {
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+    .dj-sidebar__footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .dj-sidebar__content {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1440px) {
+        .dj-block--user-wellcome {
+            margin-bottom: 40px;
+        }
+        .dj-sidebar__top {
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (min-width: 1680px) {
+        .dj-block--earning-count {
+            padding-bottom: 50px;
+        }
+        .dj-block--user-wellcome {
+            margin-bottom: 80px;
+        }
+        .dj-sidebar__top {
+            padding-right: 60px;
+            margin-bottom: 70px;
+        }
+    }
+}
+.ps-main {
+    padding-top: 60px;
+    > * {
+        flex-basis: 100%;
+    }
+    .ps-main__sidebar {
+        display: none;
+    }
+    .ps-main__wrapper {
+        padding: 30px 16px;
+    }
+    @media screen and (min-width: 1400px) {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        padding-top: 0;
+        min-height: 100vh;
+        padding-left: 250px;
+        .ps-main__sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+            max-width: 250px;
+            width: 100%;
+            height: 100%;
+            padding: 30px 0 30px 16px;
+            background-color: $color-bg-sidebar;
+        }
+        .ps-main__wrapper {
+            padding: 30px;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        padding-left: 250px;
+        .ps-main__sidebar {
+            max-width: 250px;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        .ps-main__sidebar {
+            //padding: 60px 0 60px 60px;
+        }
+        .ps-main__wrapper {
+            //padding: 60px 80px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,95 @@
+.dj-badge {
+    display: inline-block;
+    border-radius: var(--dj-badge--border-radius, 0px);
+    padding: var(--dj-badge--padding, 9px 10px);
+    font-size: var(--dj-badge--text-size, 11px);
+    color: var(--dj-badge--text-color, #ffffff);
+    font-weight: var(--dj-badge--text-weight, 700);
+
+    font-style: normal;
+    text-align: center;
+    line-height: 12px;
+
+    //Logistique
+    &.CREATING,
+    &.OC {
+        background-color: var(--dj-badge--bg-creating, #66c2ff);
+    }
+    &.DO {
+        background-color: var(--dj-badge--bg-do, #ffcc00);
+    }
+    &.DOH {
+        background-color: var(--dj-badge--bg-doh, #ffb84d);
+    }
+    &.WCA {
+        background-color: var(--dj-badge--bg-wca, #ff9900);
+    }
+    &.WSA {
+        background-color: var(--dj-badge--bg-wsa, #ff9933);
+    }
+    &.DC {
+        background-color: var(--dj-badge--bg-dc, #FF3333);
+    }
+    &.DS {
+        background-color: var(--dj-badge--bg-ds, #ff6666);
+    }
+    &.AS {
+        background-color: var(--dj-badge--bg-as, #66ff66);
+    }
+    &.WF {
+        background-color: var(--dj-badge--bg-wf, #ffee00);
+    }
+    &.WS {
+        background-color: var(--dj-badge--bg-ws, #FFD700);
+    }
+    &.PS {
+        background-color: var(--dj-badge--bg-ps, #FFA500);
+    }
+    &.S {
+        background-color: var(--dj-badge--bg-s, #008080);
+    }
+    &.COMPLETED {
+        background-color: var(--dj-badge--bg-completed, #FF4D4D);
+    }
+    &.CANCELED {
+        background-color: var(--dj-badge--bg-canceled, #CC0000);
+    }
+    
+    //Paiement
+    &.A {
+        background-color: var(--dj-badge--bg-a, #001F3F);
+    }
+    &.WA {
+        background-color: var(--dj-badge--bg-wa, #D3D3D3);
+    }
+    &.WP {
+        background-color: var(--dj-badge--bg-wp, #FFFF00);
+        color: var(--dj-badge--color-wp, #000);
+    }
+    &.P {
+        background-color: var(--dj-badge--bg-p, #008000);
+    }
+    &.PP {
+        background-color: var(--dj-badge--bg-pp, #00FF00);
+    }
+    &.OP {
+        background-color: var(--dj-badge--bg-op, #FFD700);
+        color: var(--dj-badge--color-op, #000);
+    }
+    &.REFUSED {
+        background-color: var(--dj-badge--bg-refused, #FF0000);
+    }
+    &.WR {
+        background-color: var(--dj-badge--bg-wr, #87CEFA);
+    }
+    &.PR {
+        background-color: var(--dj-badge--bg-pr, #4682B4);
+    }
+    &.REFUNDED {
+        background-color: var(--dj-badge--bg-refunded, #4B0082);
+    }
+    &.gray {
+        color: #666666;
+        background-color: #e9e9e9;
+    }
+}

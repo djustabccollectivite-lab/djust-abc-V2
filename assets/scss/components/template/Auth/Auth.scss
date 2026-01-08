@@ -1,0 +1,122 @@
+.dj-form--account {
+    max-width: 500px;
+    margin: 0 auto 30px !important;
+    padding-top: 20px;
+    @extend %list-reset;
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .dj-tab-list {
+        text-align: center;
+        margin-bottom: 30px;
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+
+            a {
+                font-size: 26px;
+                color: var(--color-body-2);
+                font-weight: 600;
+            }
+
+            &.active {
+                a {
+                    color: var(--color-body);
+                }
+            }
+        }
+    }
+
+    .dj-checkbox {
+        > label {
+            color: var(--color-body);
+        }
+    }
+
+    .dj-list--social {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 -5px;
+
+        li {
+            padding: 0 5px;
+            width: 100%;
+            text-align: center;
+            margin-right: 0;
+
+            a {
+                display: block;
+                line-height: 20px;
+                padding: 15px 0;
+
+                i {
+                    color: #ffffff;
+                    text-align: center;
+                }
+
+                &.facebook {
+                    background-color: #3b5999;
+                }
+
+                &.google {
+                    background-color: #dd4b39;
+                }
+
+                &.twitter {
+                    background-color: #55acee;
+                }
+
+                &.instagram {
+                    background-color: #e4405f;
+                }
+            }
+        }
+    }
+
+    .dj-form__content {
+        padding: 30px 30px 0;
+
+        h5,
+        .title__h5 {
+            margin: 0 0 25px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .dj-form__content__register {
+        padding: 0px 0px 0;
+
+        h5,
+        .title__h5 {
+            margin: 0 0 25px;
+            padding: 0px 30px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .dj-form__footer {
+        padding: 30px 30px;
+    }
+
+    .dj-tab {
+        background-color: #ffffff;
+    }
+}
+
+.dj-tab {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+// .dj-my-account {
+//     min-height: 100vh;
+//     background-color: #f9f9f9;
+// }

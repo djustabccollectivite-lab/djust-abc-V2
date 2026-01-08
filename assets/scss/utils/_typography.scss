@@ -1,0 +1,13 @@
+//var(--font-1st): 'Work Sans', sans-serif;
+//var(--font-2st): 'Open Sans', sans-serif;
+
+//var(--document-font-size): 14px;
+
+@mixin font($element, $font-weight, $font-size, $line-height, $font-family) {
+    font: var(#{$element}, _font($element, $font-weight, $font-size, $line-height, $font-family));
+}
+
+@mixin border($element, $border-width, $border-style, $border-color) {
+    border: var(#{$element}, _border($element, $border-style, $border-color));
+    border-width: var(#{$element}-width, $border-width);
+}

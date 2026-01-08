@@ -1,0 +1,65 @@
+.dj-table--whishlist {
+    .dj-btn {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+.dj-table--whishlist {
+    thead {
+        tr {
+            th {
+                text-transform: uppercase;
+                color: var(--color-body);
+                text-align: center;
+                font-weight: 600;
+                &:nth-child(2) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 5px 5px;
+                vertical-align: middle;
+                font-size: 16px;
+                text-align: center;
+                &:first-child {
+                    i {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+                &:last-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @include media('<md') {
+        tbody {
+            tr {
+                td {
+                    min-width: 200px;
+                    &:first-child {
+                        max-width: 50px;
+                        min-width: 50px;
+                        text-align: center;
+                    }
+                    &:nth-child(2) {
+                        min-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+.add-to-cart--buyingList {
+    button {
+        font-size: 20px !important;
+    }
+}

@@ -1,0 +1,54 @@
+.dj-promo-code {
+  &__title {
+    margin-bottom: 48px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid var(--color-liseret);
+    border-radius: 4px;
+  }
+
+  &__error {
+    color: red;
+  }
+
+  &__success {
+    color: green;
+  }
+
+  &__voucher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #e5e7eb;
+
+    &-label {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid var(--color-liseret);
+      border-radius: 10px;
+    }
+
+    &-infos {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-align: right;
+    }
+
+    &-conditions {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  &__close-icon {
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+}

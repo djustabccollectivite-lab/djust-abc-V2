@@ -1,0 +1,32 @@
+.dj-product__content {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+    .dj-price {
+        padding-bottom: 5px;
+        .dj-product__price {
+            font-size: 18px;
+            font-family: var(--font-2nd) !important;
+        }
+        .dj-price__info {
+            margin-left: 5px;
+            margin-bottom: 0px;
+            span {
+                font-size: 12px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    &.hover {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -1px;
+        width: calc(100% + 2px);
+        padding: 0 20px 20px;
+        border-top: none;
+        border: 1px solid var(--border-product-thumbnail__hover);
+        @include hidden;
+    }
+}

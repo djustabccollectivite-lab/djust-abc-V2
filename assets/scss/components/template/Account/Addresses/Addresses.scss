@@ -1,0 +1,49 @@
+.dj-block--address {
+    figcaption {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    a {
+        font-size: 16px;
+    }
+}
+
+.dj-block {
+    .dj-block__header {
+        border-bottom: 1px solid #f0f0f0;
+        h3,
+        .title__h3 {
+            color: var(--color-body);
+        }
+    }
+}
+
+.dj-block--address {
+    figcaption {
+        font-family: var(--font-1st);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    figcaption.billing {
+        color: var(--color-primary);
+        i {
+            color: var(--color-primary);
+        }
+    }
+    figcaption.shipping {
+        color: var(--color-primary);
+        i {
+            color: var(--color-primary);
+        }
+    }
+    p {
+        color: var(--color-body);
+    }
+    a {
+        color: var(--color-link);
+    }
+}

@@ -1,0 +1,27 @@
+const state = () => ({
+    facets: [],
+    facetsSelected: {},
+    customFieldsSelected: {},
+    categoryIds: null,
+    customFieldsSupplier: null,
+    suppliers: [],
+    supplier: null,
+    brand: null,
+    priceMin: 0,
+    priceMax: null,
+    rq: '',
+    sortType: 'CREATION',
+    sort: 'DESC',
+    pageSize: 20,
+    pageNumber: 0,
+    paged: true,
+    productThumbnails: null,
+    isLoading: true,
+    productsTags: [],
+    askApi: true,
+    idType: 'DJUST_ID',
+    path: null,
+    listType: 'grid',
+});
+
+export default state;

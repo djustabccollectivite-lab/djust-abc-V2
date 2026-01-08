@@ -1,0 +1,9 @@
+.dj-to-top {
+  background-color: var(--color-primary) !important;
+  bottom: 80px !important;
+  z-index: 9999 !important;
+
+  &__icon {
+    font-size: 25px;
+  }
+}

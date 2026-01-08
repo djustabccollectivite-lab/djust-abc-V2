@@ -1,0 +1,110 @@
+.dj-form--checkout {
+    h3,
+    .title__h3 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+        > label {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .v-text-field {
+        > .v-input__control {
+            > .v-input__slot {
+                position: relative;
+                min-height: 40px !important;
+                max-height: 100px;
+                fieldset {
+                    border-radius: 0;
+                    border-color: #ccc;
+                }
+            }
+        }
+        &.v-input--is-focused {
+            > .v-input__control {
+                > .v-input__slot {
+                    fieldset {
+                        border-width: 1px;
+                        border-color: var(--color-grey);
+                    }
+                }
+            }
+        }
+    }
+
+    .ps-form__submit {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.dj-block--billing {
+    figure {
+        margin-bottom: 0;
+        a {
+            text-align: right;
+        }
+        strong {
+            text-align: right;
+        }
+    }
+    .dj-block__panel {
+        margin-bottom: 30px;
+        //padding: 10px 20px;
+    }
+    @media screen and (min-width: 480px) {
+        .dj-block__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        figure {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > * {
+                flex-basis: 100%;
+            }
+            small {
+                font-size: 14px;
+                max-width: 10em;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            a {
+                align-self: flex-end;
+                max-width: 10em;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.dj-block--billing {
+    .dj-block__panel {
+        padding: 2rem;
+        border: 1px solid #d1d1d1;
+        border-radius: var(--border-radius-card);
+    }
+    .dj-block__panel__active {
+        border: 2px solid var(--color-primary);
+    }
+    @media screen and (min-width: 768px) {
+        figure {
+            a {
+                color: var(--color-link);
+            }
+        }
+    }
+}

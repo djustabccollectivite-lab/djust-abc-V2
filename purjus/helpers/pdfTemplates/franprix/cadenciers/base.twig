@@ -1,0 +1,117 @@
+<div class="container">
+    <div class="title">
+        <h1>CADENCIERS - FRUITS/LEGUMES</h1>
+    </div>
+    </br>
+    <div class="layout-title">
+        <h2> LES EN-COURS D'OP POUR CETTE SEMAINE </h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width:7%">Code Produit</th>
+                <th class="wide-column">Code-Barre</th>
+                <th class="wide-column-name">Libéllé produit</th>
+                <th colspan="2">Colisage</th>
+                <th colspan="2" class="wide-column-name">OP</th>
+                <th colspan="2">Quantité</th>
+                <th colspan="2"></td>
+                <th colspan="2"></td>
+                <th colspan="2"></td>
+                <th colspan="2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for op in ops %}
+            <tr>
+                <td class="wide-column-name"> {{ op.externalId }} </td>
+                <td class="wide-column">
+                    {% if op.barcodeImage %}
+                        <img class="image" src="{{ op.barcodeImage }}" alt="Code-barre">
+                    {% else %}
+                        Non disponible
+                    {% endif %}
+                </td>
+                <td> {{ op.name }} </td>
+                <td colspan="2"> {{ op.colisage }} </td>
+                <td colspan="2" class="wide-column-name"> {{ op.op }} </td>
+                <td colspan="2"> {{ op.quantity }} </td>
+                <th colspan="2"></td>
+                <th colspan="2"></td>
+                <th colspan="2"></td>
+                <th colspan="2"></td>
+            <tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </br>
+    <div>
+        <h2> CADENCIER DE LA SEMAINE </h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width:7%">Code Produit</th>
+                <th class="wide-column">Code-Barre</th>
+                <th class="wide-column-name">Libéllé</th>
+                <th>En cours</th>
+                <th style="width:5%">Colisage</th>
+                <th colspan="2">Lundi</th>
+                <th colspan="2">Mardi</th>
+                <th colspan="2">Mercredi</th>
+                <th colspan="2">Jeudi</th>
+                <th colspan="2">Vendredi</th>
+                <th colspan="2">Samedi</th>
+            </tr>
+            <tr>
+                <th style="width:7%"></th>
+                <th class="wide-column"></th>
+                <th class="wide-column-name"></th>
+                <th class="second-th"></th>
+                <th class="second-th"></th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+                <th class="second-th">Stock magasin</th>
+                <th class="second-th">Préco Commande</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr {% if item.isPromo == true %}class="isPromo"{% endif %}">
+                <td>{{ item.externalId }}</td>
+                <td class="wide-column">
+                    {% if item.barcodeImage %}
+                        <img class="image" src="{{ item.barcodeImage }}" alt="Code-barre">
+                    {% else %}
+                        Non disponible
+                    {% endif %}
+                </td>
+                <td class="wide-column-name">{{ item.name }}</td>
+                <td>{{ item.en_cours }}</td>
+                <td>{{ item.colisage }}</td>
+                <td>{{ item.lundi_stock }}</td>
+                <td>{{ item.lundi_preco }}</td>
+                <td>{{ item.mardi_stock }}</td>
+                <td>{{ item.mardi_preco }}</td>
+                <td>{{ item.mercredi_stock }}</td>
+                <td>{{ item.mercredi_preco }}</td>
+                <td>{{ item.jeudi_stock }}</td>
+                <td>{{ item.jeudi_preco }}</td>
+                <td>{{ item.vendredi_stock }}</td>
+                <td>{{ item.vendredi_preco }}</td>
+                <td>{{ item.samedi_stock }}</td>
+                <td>{{ item.samedi_preco }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{{static.style}}

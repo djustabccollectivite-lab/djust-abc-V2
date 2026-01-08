@@ -1,0 +1,148 @@
+<div class="pdf-container">
+    {{static.header}}
+    <div class="pdf-part">
+        <div class="seller-contact">
+            <span class="contact-header">
+                Coordonnées Commercial
+            </span>
+            <div class="seller-contact-body">
+                <span class="right-align">Commercial&nbsp;:&nbsp;</span>
+                <span class="left-align wrap-word">{{seller.name}}</span>
+                <span class="right-align">Téléphone&nbsp;:&nbsp;</span>
+                <span class="left-align wrap-word">{{seller.phone}}</span>
+                <span class="right-align">Mail&nbsp;:&nbsp;</span>
+                <span class="left-align wrap-word">{{seller.mail}}</span>
+            </div>
+        </div>
+        <div class="buyer-contact">
+            <span class="contact-header">
+                Coordonnées Client
+            </span>
+            <div class="buyer-contact-body">
+                <div class="left-part-body-contact">
+                    <span class="right-align">Client&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.name}}</span>
+                    <span class="right-align">N° Client&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.number}}</span>
+                    <span class="right-align">Téléphone&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.phone}}</span>
+                    <span class="right-align">Mail&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.mail}}</span>
+                    <span class="right-align">Raison&nbsp;sociale&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.reason}}</span>
+                    <span class="right-align">Siret&nbsp;:&nbsp;</span>
+                    <span class="left-align wrap-word">{{customer.siret}}</span>
+                </div>
+                <div class="right-part-body-contact">
+                    <div class="address-format right-align">
+                        <span class="left-align">Adresse</span>
+                        <span class="left-align">facturation&nbsp;:&nbsp;</span>
+                    </div>
+                    <span class="left-align wrap-word">{{customer.billingAddress.address}}
+                        {{customer.billingAddress.city}}
+                        {{customer.billingAddress.country}}
+                        {{customer.billingAddress.fullName}}</span>
+                    <div class="address-format right-align">
+                        <span class="left-align">Adresse</span>
+                        <span class="left-align">livraison&nbsp;:&nbsp;</span>
+                    </div>
+                    <span class="left-align wrap-word">
+                        {{customer.billingAddress.address}}
+                        {{customer.billingAddress.city}}
+                        {{customer.billingAddress.country}}
+                        {{customer.billingAddress.fullName}}
+                    </span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pdf-part">
+        <div class="quote-date">
+            <span class="right-align">Date&nbsp;:&nbsp;</span>
+            <span>{{quoteInfos.date}}</span>
+        </div>
+        <div class="quote-number">
+            <span class="right-align">DEVIS MARCHANDISES N°&nbsp;:&nbsp;</span>
+            <span>{{quoteInfos.number}}</span>
+        </div>
+    </div>
+
+    <div class="pdf-part">
+        <div class="quote-details">
+            <span class="detail-header">Code article</span>
+            <span class="detail-header main">Libellé article</span>
+            <span class="detail-header">Taux TVA</span>
+            <span class="detail-header">P.U HT</span>
+            <span class="detail-header">P.U TTC</span>
+            <span class="detail-header">Qté</span>
+            <span class="detail-header">Total HT</span>
+            <span class="detail-header">Montant de remise</span>
+            <span class="detail-header">Total HT remisé</span>
+            <span class="detail-header">Montant TVA</span>
+            <span class="detail-header">Total TTC</span>
+        </div>
+        {% for line in lines %}
+        <div class="detail-line">
+            <span>{{line.artCode}}</span>
+            <span class="main">{{line.artName}}</span>
+            <span>{{line.tvaRate}}</span>
+            <span>{{line.price}}</span>
+            <span>{{line.ttcPrice}}</span>
+            <span>{{line.quantity}}</span>
+            <span>{{line.httotal}}</span>
+            <span>{{line.globalDiscount}}%</span>
+            <span>{{line.httotalWithDiscount}}</span>
+            <span>{{line.tvaAmount}}</span>
+            <span>{{line.ttcTotal}}</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="total-part">
+        <div class="terms">
+            <span class="mb-10 bold">DEVIS GRATUIT</span>
+            <span class="bold underline">MODALITES DE REGLEMENT</span>
+            <span class="small">Acompte du montant total de la commande (hors frais de livraison)</span>
+            <span class="small">(A verser à la signature du bon de commande)</span>
+        </div>
+        <div class="cadre">
+            <div class="tva">
+                <span class="right-align text-tva">TVA 5.5%</span>
+                <span class="bottom-border">{{total.fivetvaValue}}</span>
+                <span class="right-align text-tva">TVA 10%</span>
+                <span class="bottom-border">{{total.tentvaValue}}</span>
+                <span class="right-align text-tva">TVA 20%</span>
+                <span class="bottom-border">{{total.twentytvaValue}}</span>
+                <span class="right-align text-tva">Total TVA</span>
+                <span class="bottom-border">{{total.totaltvaValue}}</span>
+            </div>
+            <div class="total">
+                <span class="right-align">TOTAL HT (sans remise)</span>
+                <span class="bottom-border">{{total.ht}}€</span>
+                <span class="right-align">TOTAL TTC (sans remise)</span>
+                <span class="bottom-border">{{total.ttc}}€</span>
+                <span class="right-align">Montant de remise </span>
+                <span class="bottom-border">{{total.globalDiscount}}€</span>
+                <span class="right-align">TOTAL HT (avec remise)</span>
+                <span class="bottom-border"> {{total.httotalWithDiscount}}€</span>
+                <span class="right-align">TOTAL TTC (avec remise)</span>
+                <span class="bottom-border">{{total.totaltvaWithDiscount}}€</span>
+            </div>
+        </div>
+    </div>
+    <div class="pdf-part sign">
+        <span class="bold sign-title">Offre valable 30 jours à compter de la date d'émission du devis</span>
+        <div class="sign-rect">Cachet et signature de la Société :</div>
+        <div class="date-place">
+            <span class="right-align">Fait&nbsp;à&nbsp;:&nbsp;</span>
+            <span></span>
+            <span class="right-align">Le&nbsp;:&nbsp;</span>
+            <span></span>
+        </div>
+    </div>
+    {{static.footer}}
+</div>
+{{static.style}}

@@ -1,0 +1,102 @@
+<div class="pdf-container">
+    <header class="flex" style="margin-bottom: 30px">
+        <div>
+            <h1 class="primary" style="min-width: 500px; padding-top: 10px">Reporting Carbone des Commandes</h1>
+            <h2>Chantier {{ filename }}</h2>
+        </div>
+        <div style="display: flex; justify-content: flex-end; flex-direction: column;align-items: center">
+            <img
+                src='data:image/png;base64,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'
+                alt="logo BlueOn"
+                width="120"
+            />
+            <p class="primary" style="margin-bottom: 0">Edité le <span>{{ date }}</span></p>
+            <p class="primary" style="margin-bottom: 0">Par <span>{{ user }}</span></p>
+        </div>
+    </header>
+    <main>
+        <div class="orders">
+            {% set orderTotalCO2 = 0 %}
+            {% for order in orders %}
+                <div class="order-primary">Commande {{ order.reference }} - {{ order.createdAt|date("d/m/Y") }}</div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Référence de la commande</th>
+                        <th>Référence fabricant</th>
+                        <th>Référence Libellé produit</th>
+                        <th>Description du conditionnement</th>
+                        <th>Quantité commandée</th>
+                        <th>Vendeur</th>
+                        <th>Fabricant</th>
+                        <th>Source de donnée environnementale (1)</th>
+                        <th>Type de déclaration environnementale (2)</th>
+                        <th>ID Déclaration environnementale (3)</th>
+                        <th>Total A1 à A3 en UC en Kg CO<sub>2</sub> eq (4)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% set sumCO2 = 0 %}
+                    {% for line in order.lines %}
+                        <tr>
+                            <td>{{order.reference}}</td>
+                            <td>{{ line.manufacturerReference }}</td>
+                            <td>{{ line.name }}</td>
+                            <td>{{ line.conditionment }}</td>
+                            <td>{{ line.quantity }}</td>
+                            <td>{{ line.supplier }}</td>
+                            <td>{{ line.manufacturer }}</td>
+                            <td>{{ line.envDeclarationSource }}</td>
+                            <td>{{ line.envDeclarationType }}</td>
+                            <td>{{ line.envFdesId }}</td>
+                            <td>{{ line.co2 }}</td>
+                        </tr>
+                    {% endfor %}
+                        <tr>
+                            <td class="no-border" colspan="7"></td>
+                            <td colspan="3" class="bold">Total CO<sub>2</sub> Commande (en Kg CO<sub>2</sub> eq.)</td>
+                            <td>{{ order.totalCO2|round(3) }}</td>
+                            {% set orderTotalCO2 = orderTotalCO2 + order.totalCO2 %}
+                        </tr>
+                    </tbody>
+                </table>
+            {% endfor %}
+            <div style="display: flex; justify-content: space-between;">
+                <div class="order-primary">Bilan des commandes</div>
+                <div class="order-primary">Bilan CO<sub>2</sub> Total</div>
+            </div>
+
+            <table>
+                <thead>
+                    <th>Référence de la commande</th>
+                    <th class="no-border"></th>
+                    <th>Total A1 à A3 en UC en Kg CO<sub>2</sub> eq</th>
+                </thead>
+                <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td class="w-130">{{order.reference}}</td>
+                        <td>Total CO<sub>2</sub> Commande {{order.reference}} (en Kg CO<sub>2</sub> eq)</td>
+                        <td class="w-130">{{ order.totalCO2 }}</td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td class="no-border w-130"></td>
+                    <td >
+                        Total CO<sub>2</sub> de toutes les commandes (en KG CO<sub>2</sub> eq.)
+                    </td>
+                    <td class="w-130">
+                        {{orderTotalCO2|round(3)}}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p class="note"><span>(1)</span> La source de données permet de savoir si la déclaration environnementale est publiée sur une base de données (INIES, PEP ECOPSSPORT, IBU) ou si elle provient du fournisseur.</p>
+            <p class="note"><span>(2)</span> Le type de déclaration permet de connaitre le cadre dans lequel s'inscrit la déclaration (FDES, PEP, EPD, ACV fournisseur)</p>
+            <p class="note"><span>(3)</span> Le numéro de déclaration environnemental est l'identifiant usuel lié à la déclaration.</p>
+            <p class="note"><span>(4)</span> L'empreinte carbone (Unité Commerciale) sur les phases A1-A3 correspond à l'empreinte carbone du produit vendu dans son conditionnement, et prend en compte le CO<sub>2</sub> émis jusqu'à la sortie d'usine (craddle to gate). Cela correspond au Scope 3.1 de l'acheteur dans son bilan carbone.</p>
+            <p class="footer">Bilan carbone des commandes effectuées sur BlueOn. Plus d'information sur blueon.io</p>
+        </div>
+    </main>
+</div>
+{{static.style}}

@@ -1,0 +1,27 @@
+.dj-block--site-features {
+    border: 1px solid #d9d9d9;
+    .dj-block__left {
+        i {
+            color: var(--color-primary);
+        }
+    }
+    .dj-block__right {
+        h4,
+        .title__h4 {
+            color: #000;
+        }
+        p {
+            color: var(--color-body-2);
+        }
+    }
+    .dj-block__item {
+        border-right: 1px solid #dadada;
+    }
+    &.dj-block--site-features-2 {
+        @media (max-width: 1440px) {
+            .dj-block__item {
+                border-right: 1px solid #dadada;
+            }
+        }
+    }
+}
