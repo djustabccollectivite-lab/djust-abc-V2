@@ -31,7 +31,11 @@
         "docs-components-templates:generate": "vuedoc-md ./components/templates/*/*.vue --output docs/pages/components/templates/",
         "semantic-release": "semantic-release",
         "commit": "cz",
-        "prepare": "husky"
+        "prepare": "husky",
+        "build:preprod": "ENV=abc APPLICATION_ENV=preprod nuxt generate",
+        "build:prod": "ENV=abc APPLICATION_ENV=prod nuxt generate",
+        "deploy:preprod": "npm run build:preprod && firebase deploy -P staging",
+        "deploy:prod": "npm run build:prod && firebase deploy -P production"
     },
     "dependencies": {
         "@adyen/adyen-web": "^6.9.0",
@@ -58,6 +62,7 @@
         "core-js": "^3.15.1",
         "cross-env": "^7.0.3",
         "css-loader": "^5.2.4",
+        "firebase": "^8.10.1",
         "friendly-challenge": "^0.9.18",
         "helmet": "^7.1.0",
         "imagesloaded": "^4.1.4",

@@ -82,6 +82,7 @@ export default {
     ],
 
     plugins: [
+        { src: "~/plugins/firebase.ts", ssr: true },
         { src: '~/plugins/mangopay.js', ssr: false },
         { src: '~plugins/vueliate.js', ssr: false },
         { src: '~/plugins/swiper-plugin.js', ssr: false },

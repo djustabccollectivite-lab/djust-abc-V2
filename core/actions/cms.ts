@@ -1,5 +1,4 @@
 import { Context } from '@nuxt/types';
-import { doc, getDoc, collection, getDocs, query, orderBy, where } from "firebase/firestore";
 
 export default (context: Context) => ({
     /**
@@ -7,10 +6,9 @@ export default (context: Context) => ({
      */
     async getHomePage() {
         try {
-            const docRef = doc(context.$db, "pages", "home");
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
-                return docSnap.data().components;
+            const docSnap = await context.$db.collection("pages").doc("home").get();
+            if (docSnap.exists) {
+                return docSnap.data()?.components || [];
             }
             return [];
         } catch (error) {
@@ -24,9 +22,8 @@ export default (context: Context) => ({
      */
     async getPage(pageId: string) {
         try {
-            const docRef = doc(context.$db, "pages", pageId);
-            const docSnap = await getDoc(docRef);
-            return docSnap.exists() ? docSnap.data() : null;
+            const docSnap = await context.$db.collection("pages").doc(pageId).get();
+            return docSnap.exists ? docSnap.data() : null;
         } catch (error) {
             console.error(`Erreur Firebase Page ${pageId}:`, error);
             return null;
@@ -38,9 +35,7 @@ export default (context: Context) => ({
      */
     async getBlogPosts() {
         try {
-            const blogRef = collection(context.$db, "blog");
-            const q = query(blogRef, orderBy("date", "desc"));
-            const querySnapshot = await getDocs(q);
+            const querySnapshot = await context.$db.collection("blog").orderBy("date", "desc").get();
             return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         } catch (error) {
             console.error("Erreur Firebase Blog:", error);
@@ -53,9 +48,8 @@ export default (context: Context) => ({
      */
     async getFaq() {
         try {
-            const docRef = doc(context.$db, "pages", "faq");
-            const docSnap = await getDoc(docRef);
-            return docSnap.exists() ? docSnap.data().questions : [];
+            const docSnap = await context.$db.collection("pages").doc("faq").get();
+            return docSnap.exists ? (docSnap.data()?.questions || []) : [];
         } catch (error) {
             console.error("Erreur Firebase FAQ:", error);
             return [];

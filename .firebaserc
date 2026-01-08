@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "abcdjust-stage",
+    "production": "abcdjust-b9da4"
+  }
+}
